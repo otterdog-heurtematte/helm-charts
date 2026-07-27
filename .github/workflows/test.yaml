@@ -48,6 +48,23 @@ jobs:
       - name: Create kind cluster
         if: steps.list-changed.outputs.changed == 'true'
         uses: helm/kind-action@0025e74a8c7512023d06dc019c617aa3cf561fde # v1.10.0
+      - name: Install helm-docs
+        run: |
+          go install github.com/norwoodj/helm-docs/cmd/helm-docs@v1.14.2
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Validate README is up to date
+        run: |
+          status=0
+          for chart in charts/*/; do
+            [ -f "${chart}README.md.gotmpl" ] || continue
+            helm-docs --chart-to-generate "${chart%/}" --sort-values-order=file
+            if ! git diff --exit-code -- "${chart}README.md"; then
+              echo "::error::${chart}README.md is out of date — run 'helm-docs --chart-to-generate ${chart%/} --sort-values-order=file' and commit the result."
+              status=1
+            fi
+          done
+          exit "$status"
 
       # TODO: enable chart testing install. There are limitations and improvements to be made in deployment see issue #6
       # - name: Run chart-testing (install)

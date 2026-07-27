@@ -1,6 +1,6 @@
 # ghproxy
 
-![Version: 0.3.0][version-badge] <!-- x-release-please-version -->
+![Version: 0.4.1][version-badge] <!-- x-release-please-version -->
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 ![AppVersion: v20251030-0e4d5be42](https://img.shields.io/badge/AppVersion-v20251030--0e4d5be42-informational?style=flat-square)
 
@@ -140,5 +140,5 @@ Notes:
 | vault.operator.refreshAfter | string | `"30s"` | How often VSO syncs the secret from Vault (e.g. 30s, 1m) |
 
 <!-- x-release-please-start-version -->
-[version-badge]: https://img.shields.io/badge/Version-0.3.0%2Dinformational?style=flat-square
+[version-badge]: https://img.shields.io/badge/Version-0.4.1%2Dinformational?style=flat-square
 <!-- x-release-please-end -->

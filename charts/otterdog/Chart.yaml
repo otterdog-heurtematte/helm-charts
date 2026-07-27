@@ -26,7 +26,7 @@ maintainers:
     url: https://github.com/eclipse-csi/otterdog/
 type: application
 kubeVersion: ">=1.23.0-0"
-version: 1.2.0
+version: 1.2.1
 appVersion: "1.4.0"
 dependencies:
   - name: ghproxy

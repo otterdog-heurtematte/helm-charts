@@ -13,5 +13,5 @@ description: A Helm chart for ghproxy
 maintainers:
   - name: eclipse-csi
 type: application
-version: 0.4.0
+version: 0.4.1
 appVersion: "v20251030-0e4d5be42"

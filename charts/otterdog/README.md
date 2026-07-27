@@ -1,8 +1,8 @@
 # otterdog
 
-![Version: 1.1.12][version-badge] <!-- x-release-please-version -->
+![Version: 1.2.1][version-badge] <!-- x-release-please-version -->
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
-![AppVersion: 1.3.4](https://img.shields.io/badge/AppVersion-1.3.4-informational?style=flat-square)
+![AppVersion: 1.4.0](https://img.shields.io/badge/AppVersion-1.4.0-informational?style=flat-square)
 
 An otterdog Web App Helm chart for Kubernetes
 
@@ -329,5 +329,5 @@ Notes:
 | ghproxy.enabled | bool | `true` | Enable ghproxy |
 
 <!-- x-release-please-start-version -->
-[version-badge]: https://img.shields.io/badge/Version-1.1.12%2Dinformational?style=flat-square
+[version-badge]: https://img.shields.io/badge/Version-1.2.1%2Dinformational?style=flat-square
 <!-- x-release-please-end -->
